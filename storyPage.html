@@ -35,6 +35,16 @@
             height: 400px;
             margin-top: 50px;
         }
+
+        /* Added styles for scrollable view */
+        .scrollable-view {
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+
+        .scrollable-view img {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +91,15 @@
         </div>
     </header>
 
-    <div id="map"></div>
+    <div class="container mt-5">
+        <h2>Specialty Sandwiches</h2>
+        <div class="scrollable-view" data-spy="scroll" data-target="#scrollSpy" data-offset="0">
+            <div id="scrollSpy">
+                <div id="specialty-sandwiches-container"></div>
+            </div>
+        </div>
+    </div>
+    <div id="map">
 
     <script>
         function initMap() {
@@ -101,17 +119,20 @@
                 title: "Valentina's Sandwich Service"
             });
         }
-    </script>
+    </script></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
-
     <script>
         // Call the initMap function when the page has finished loading
         window.onload = function() {
             initMap();
         };
     </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
+
 
 
 
