@@ -1,6 +1,6 @@
 // index.js
 
-const unsplashAccessKey = "v5Bx5AuGAZwCzNuSo_NH5chn1znvkFvQSX_Kc_6URRk";
+const unsplashAccessKey = "";
 const specialtySandwichesContainer = document.getElementById("specialty-sandwiches-container");
 
 fetch(`https://api.unsplash.com/photos/random?query=sandwich&count=10&client_id=${unsplashAccessKey}`)
