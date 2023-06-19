@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentina's Sandwich Service - Our Story</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom styles here */
+        body {
+            padding-top: 50px;
+        }
+
+        .story-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .story-section {
+            flex-basis: 30%;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+
+        .story-section h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Valentina's Sandwich Service</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menuPage.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartPage.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="staffPage.html">Our Staff</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="storyPage.html">Our Story</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="mt-5">Our Story</h1>
+            <p>Discover the history and passion behind Valentina's Sandwich Service:</p>
+            <div class="story-container">
+                <div class="story-section">
+                    <h2>From Humble Beginnings</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in metus quis mi dapibus semper eget vitae lorem.</p>
+                </div>
+                <div class="story-section">
+                    <h2>Quality Ingredients</h2>
+                    <p>Suspendisse potenti. Aenean congue nunc id purus bibendum vestibulum. Aliquam erat volutpat. In malesuada, leo nec tincidunt rhoncus.</p>
+                </div>
+                <div class="story-section">
+                    <h2>Customer Satisfaction</h2>
+                    <p>Quisque faucibus sem ut vulputate lobortis. Sed vel dolor at ligula condimentum eleifend. Aliquam consequat lobortis purus, sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtGXWKHMKxqtxbYv8z_scV0ZSGgloQf44&="></script>
+    <script>
+        function initMap() {
+            // Specify the coordinates for your desired map location
+            var myLatLng = {lat: 40.7128, lng: -74.0060};
+
+            // Create a map object and specify the element to render the map
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 12
+            });
+
+            // Add a marker to the map
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "Valentina's Sandwich Service"
+            });
+        }
+    </script>
+    <script>
+        // Call the initMap function when the page has finished loading
+        window.onload = function() {
+            initMap();
+        };
+    </script>
+</body>
+</html>

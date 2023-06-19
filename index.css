@@ -1,0 +1,146 @@
+/* Add these styles to your existing index.css file or create a new CSS file and link it in your HTML */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    padding: 20px;
+    color: #fff;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
+
+.toolbar li {
+    margin-left: 20px;
+}
+
+.toolbar li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.toolbar li a:hover {
+    color: #a8a8a8;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.story-section {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.story-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.story-section p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+}
+
+
+.image-scroll {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Add more styling as needed */
+}
+
+.image-container {
+    display: inline-block;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    /* Add more styling as needed */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    /* Add more styling as needed */
+}
+.toolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.toolbar li:last-child {
+    margin-right: 0;
+}
+.toolbar {
+    background-color: blue;
+    background-image: url("checkered-background.png");
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 10px;
+}
+
+.toolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.toolbar li:last-child {
+    margin-right: 0;
+}
+
+.toolbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar a:hover {
+    text-decoration: underline;
+}
